@@ -1665,3 +1665,11 @@ select {
 .barber-mark span { display: block; font: 8px/1.5 "Courier New", monospace; letter-spacing: .13em; margin-top: 13px; }
 @media(max-width:850px) { .barber-mark { right: 5%; font-size: 66px; opacity: .5; } .local-visual { position: relative; z-index: 1; } }
 @media(max-width:620px) { .local-art { height: 300px; } .local-visual { padding: 30px 28px; } .local-visual strong { font-size: 36px; } .barber-mark { top: 120px; right: -15px; font-size: 60px; opacity: .22; } }
+
+.diy-row { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 24px; margin-top:20px; padding:16px 20px; border:1px solid currentColor; border-color:rgba(127,127,127,.3); border-radius:16px; }
+.diy-row .eyebrow { margin:0; }
+.diy-links { display:flex; flex-wrap:wrap; gap:10px; }
+.diy-links a { display:inline-flex; gap:6px; align-items:center; padding:8px 14px; border:1px solid rgba(127,127,127,.35); border-radius:999px; text-decoration:none; color:inherit; font-weight:600; }
+.diy-links a span:not([aria-hidden]) { opacity:.7; font-weight:500; }
+.diy-links a:hover { border-color:currentColor; }
+@media(max-width:620px) { .diy-row { flex-direction:column; align-items:stretch; } .diy-links a { justify-content:space-between; } }
