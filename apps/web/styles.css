@@ -893,6 +893,10 @@ h1 em {
   font-size:11px;
   gap:10px
 }
+.price-card .details-link {
+  margin-top:14px;
+  font-size:12px
+}
 .extra-offers {
   margin-top:30px
 }
