@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pay with SOL or USDC</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="pay.css">
+<script src="../config.js"></script>
+<script src="../vendor/qrcode.js"></script>
+</head>
+<body>
+<main class="card">
+  <img class="logo" id="logo" src="../logo.svg" alt="" width="56" height="56">
+  <h1>Pay with crypto</h1>
+  <p id="intro">Send SOL or USDC on <b>Solana</b>.</p>
+  <p id="warn" class="warn hidden" role="alert"></p>
+  <div class="qr" id="qr" aria-label="Solana Pay QR code"></div>
+  <code id="addr"></code>
+  <button id="copy" type="button">Copy address</button>
+  <p class="mt">Fill this in to open the payer's wallet with everything prefilled:</p>
+  <label class="sr" for="tok">Token</label>
+  <select id="tok"><option value="SOL">SOL</option><option value="USDC">USDC</option></select>
+  <label class="sr" for="amt">Amount</label>
+  <input id="amt" type="number" min="0" step="0.01" placeholder="Amount">
+  <label class="sr" for="ref">Reference</label>
+  <input id="ref" type="text" placeholder="Order / invoice #">
+  <br><a class="btn" id="pay" href="#">Open in wallet</a>
+  <p class="small" id="note"></p>
+  <p class="small">Solana network only. Tokens sent from other chains to this address will be lost. Your reference goes in the payment memo so the payment can be matched.</p>
+  <p class="small"><a href="../">Back to the main site</a></p>
+</main>
+<script src="pay.js"></script>
+</body>
+</html>

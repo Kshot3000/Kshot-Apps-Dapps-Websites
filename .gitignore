@@ -4,3 +4,6 @@ dist/
 .env.*
 .DS_Store
 target/
+
+# Sellable template zips are committed on purpose
+!/products/dist/

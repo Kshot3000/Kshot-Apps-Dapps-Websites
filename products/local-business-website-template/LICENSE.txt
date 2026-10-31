@@ -1,0 +1,39 @@
+SINGLE-USE COMMERCIAL LICENSE
+Local Business Website Template v1.0
+
+"Seller" means the creator listed on the store page where you bought this
+template. "You" means the person or business that bought it.
+
+1. WHAT YOU MAY DO
+   a. Use the template to build ONE website ("the End Product"), either for
+      yourself or your own business, OR for ONE client.
+   b. Edit, rebrand, restyle, and extend the code and copy however you like
+      for that End Product.
+   c. Publish and run the End Product commercially, with no attribution
+      required and no extra fees.
+   d. Transfer the End Product, but not the template itself, to the one
+      client you built it for.
+
+2. WHAT YOU MAY NOT DO
+   a. Resell, sublicense, share, give away, or redistribute the template or
+      any substantial part of it, edited or not, as a template, theme, kit,
+      starter, or download, including on marketplaces or public code repos
+      presented as a reusable template.
+   b. Use one purchase for more than one End Product. Each additional site or
+      client needs another license.
+   c. Claim you created the original template.
+
+3. THIRD-PARTY COMPONENTS
+   Files listed in THIRD_PARTY_NOTICES.txt (if present) are covered by their
+   own open-source licenses, which take precedence for those files.
+
+4. NO WARRANTY
+   The template is provided "as is", without warranty of any kind. The Seller
+   is not liable for any damages, losses, or claims arising from its use,
+   including any token, payment, or business outcome. You are responsible for
+   your own content and for complying with laws that apply to your site.
+
+5. TERMINATION
+   This license ends automatically if you break its terms. On termination you
+   must stop using and delete the template (an End Product already delivered
+   in good faith to a client may remain online).
