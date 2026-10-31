@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana Wallet Demo | Kshot Applications</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="box">
+  <a class="back" href="../">← Kshot Applications</a>
+  <h1>Solana Wallet Demo</h1>
+  <p class="muted">Connect your Phantom wallet, check your SOL balance, and sign a message. Nothing is sent and no funds move.</p>
+
+  <div class="row">
+    <label>Network
+      <select id="network">
+        <option value="mainnet">Mainnet</option>
+        <option value="devnet">Devnet</option>
+      </select>
+    </label>
+  </div>
+
+  <button id="connect" class="btn">Connect Phantom</button>
+  <p id="nowallet" class="warn hidden">Phantom isn't installed. <a href="https://phantom.com/download" target="_blank" rel="noopener">Get Phantom</a>, then reload this page.</p>
+
+  <section id="wallet" class="hidden">
+    <div class="stat"><span>Address</span><code id="address"></code></div>
+    <div class="stat"><span>Balance</span><strong id="balance">…</strong></div>
+    <div class="actions">
+      <button id="refresh" class="btn ghost">Refresh balance</button>
+      <button id="disconnect" class="btn ghost">Disconnect</button>
+    </div>
+    <h2>Sign a message</h2>
+    <textarea id="message">Hello from Kshot Applications! Signing proves I own this wallet.</textarea>
+    <button id="sign" class="btn">Sign message</button>
+    <pre id="signature" class="hidden"></pre>
+  </section>
+  <p id="status" class="muted small"></p>
+  <footer class="muted small">Built by <a href="../">Kshot Applications</a>. Web2 polish, Web3 power.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -7,7 +7,9 @@ We build **apps, dapps, and websites** for businesses, from a landing page to a 
 | Path | What it is |
 | --- | --- |
 | `apps/web` | The Kshot Applications company website (storefront and portfolio) |
-| `apps/solana-demo` | A Solana dapp demo with Phantom wallet connect (in progress) |
+| `apps/solana-demo` | Solana dapp demo with Phantom wallet connect |
+| `apps/token-launch-kit` | Config-driven landing page kit for new Solana tokens |
+| `scripts/deploy-pages.sh` | Publishes the site and demos to GitHub Pages |
 | `contracts/` | On-chain programs and smart contracts for our dapps |
 | `docs/` | Briefs, service packages, and project notes |
 
@@ -28,5 +30,7 @@ python3 -m http.server 8080
 ```
 
 ## Contact
+
+Live site: https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/
 
 Follow us on X: [@kshot9000](https://x.com/kshot9000)

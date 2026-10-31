@@ -1,5 +1,5 @@
-# Solana dapp demo
+# Solana wallet demo
 
-A small demo dapp showing Phantom wallet connect on Solana: connect a wallet, show the address and SOL balance, and sign a message.
+Connect a Phantom wallet, show its address and SOL balance (mainnet or devnet), and sign a message. Plain HTML/JS with no build step and no dependencies.
 
-Status: planned. This is next after the company website.
+Live at `/solana-demo/` on the company site.
