@@ -22,4 +22,26 @@
   t.roadmap.forEach((r) => { const c = el("div", "card"); c.append(el("h3", null, r.phase)); const ul = el("ul"); r.items.forEach((i) => ul.append(el("li", null, i))); c.append(ul); $("roadmap").append(c); });
   t.socials.forEach((l) => $("socials").append(link(l, "btn ghost small")));
   $("disclaimer").textContent = t.disclaimer;
+  if (t.demoNote) { $("demo").textContent = t.demoNote; $("demo").classList.remove("hidden"); }
+  const f = t.features || {};
+  if (f.chart) {
+    $("chart").src = `https://dexscreener.com/solana/${t.mint}?embed=1&theme=dark&trades=0&info=0`;
+    $("chartSec").classList.remove("hidden");
+  }
+  if (f.swap) {
+    $("swapSec").classList.remove("hidden");
+    window.addEventListener("load", () => {
+      if (!window.Jupiter) return;
+      window.Jupiter.init({
+        displayMode: "integrated",
+        integratedTargetId: "jupiter-plugin",
+        branding: { name: t.name, logoUri: new URL(t.logo, location.href).href },
+        formProps: {
+          initialInputMint: "So11111111111111111111111111111111111111112",
+          initialOutputMint: t.mint,
+          fixedMint: t.mint,
+        },
+      });
+    });
+  }
 })();

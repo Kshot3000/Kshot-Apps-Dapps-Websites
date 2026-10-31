@@ -5,8 +5,10 @@
 <title>Token</title>
 <link rel="stylesheet" href="style.css">
 <script src="config.js"></script>
+<script src="https://plugin.jup.ag/plugin-v1.js" data-preload defer></script>
 </head>
 <body>
+<p id="demo" class="demo hidden"></p>
 <header class="hero">
   <img id="logo" alt="" width="120" height="120">
   <h1 id="name"></h1>
@@ -18,6 +20,8 @@
   </div>
   <div class="links" id="buy"></div>
 </header>
+<section id="chartSec" class="hidden"><h2>Live chart</h2><div class="chart"><iframe id="chart" title="Live chart" loading="lazy"></iframe></div></section>
+<section id="swapSec" class="hidden"><h2>Buy now</h2><p class="muted center">Connect Phantom and swap SOL for the token right here.</p><div id="jupiter-plugin" class="swap"></div></section>
 <section><h2>Tokenomics</h2><div class="grid" id="tokenomics"></div></section>
 <section><h2>How to buy</h2><ol id="howto"></ol></section>
 <section><h2>Roadmap</h2><div class="grid" id="roadmap"></div></section>

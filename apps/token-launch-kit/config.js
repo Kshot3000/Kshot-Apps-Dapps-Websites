@@ -4,11 +4,18 @@ window.TOKEN = {
   ticker: "EXMPL",
   tagline: "The community token for builders on Solana.",
   logo: "logo.svg",
-  mint: "So11111111111111111111111111111111111111112", // the token's mint address (placeholder)
+  // The token's mint address. This demo uses JUP so the chart and swap show live data.
+  mint: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+  demoNote: "Demo site: the chart and swap use the JUP token as sample data.", // set to "" for clients
+  // Launch Package ($999) features
+  features: {
+    chart: true, // live DexScreener chart
+    swap: true,  // Phantom wallet connect + buy on-site via Jupiter
+  },
   colors: { primary: "#9945ff", accent: "#14f195" },
   buyLinks: [
-    { label: "Buy on Jupiter", url: "https://jup.ag/swap/SOL-So11111111111111111111111111111111111111112" },
-    { label: "Chart on DexScreener", url: "https://dexscreener.com/solana" },
+    { label: "Buy on Jupiter", url: "https://jup.ag/swap/SOL-JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN" },
+    { label: "Chart on DexScreener", url: "https://dexscreener.com/solana/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN" },
   ],
   socials: [
     { label: "X", url: "https://x.com/kshot9000" },
