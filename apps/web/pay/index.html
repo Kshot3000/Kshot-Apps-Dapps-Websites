@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pay invoice | Kshot Applications</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<style>
+:root{--bg:#0b0d12;--panel:#141821;--text:#e8ebf2;--muted:#9aa3b5;--a:#9945ff;--b:#14f195}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);display:flex;justify-content:center;padding:48px 16px}
+.box{width:100%;max-width:480px;background:var(--panel);border:1px solid #1f2430;border-radius:16px;padding:32px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--text);text-decoration:none}.logo img{border-radius:6px}
+h1{margin:24px 0 4px;font-size:1.4rem}.muted{color:var(--muted)}
+.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #1f2430}
+.total{font-size:2rem;font-weight:800;color:var(--b);margin:16px 0}
+.btn{display:block;text-align:center;border-radius:999px;padding:14px;font-weight:700;text-decoration:none;background:#ffc439;color:#111;margin-top:20px}
+.small{font-size:.85rem}.hidden{display:none}
+</style>
+</head>
+<body>
+<main class="box">
+  <a class="logo" href="../"><img src="../logo-mark.png" width="32" height="32" alt="">Kshot Applications</a>
+  <div id="invoice" class="hidden">
+    <h1>Invoice payment</h1>
+    <p class="muted" id="ref"></p>
+    <div class="row"><span>For</span><strong id="desc"></strong></div>
+    <div class="total" id="amount"></div>
+    <a class="btn" id="paypal">Pay with PayPal or card</a>
+    <p class="muted small">You'll check out securely on PayPal. You can pay with a PayPal account or a debit or credit card.</p>
+  </div>
+  <div id="none" class="hidden">
+    <h1>Pay an invoice</h1>
+    <p class="muted">This page needs a payment link from us. Email <a href="mailto:kcaidevelopment@gmail.com" style="color:var(--b)">kcaidevelopment@gmail.com</a> and we'll send you one.</p>
+  </div>
+</main>
+<script>
+// Link format: pay/?amount=249.50&for=Launch%20Site%20deposit&inv=KA-001
+const PAYPAL = "kyleblake0659@gmail.com";
+const q = new URLSearchParams(location.search);
+const amount = parseFloat(q.get("amount"));
+const desc = (q.get("for") || "Kshot Applications project").slice(0, 120);
+const inv = (q.get("inv") || "").slice(0, 40);
+if (amount > 0) {
+  document.getElementById("invoice").classList.remove("hidden");
+  document.getElementById("desc").textContent = desc;
+  document.getElementById("ref").textContent = inv ? "Invoice " + inv : "";
+  document.getElementById("amount").textContent = amount.toLocaleString("en-US", { style: "currency", currency: "USD" });
+  const p = new URLSearchParams({ cmd: "_xclick", business: PAYPAL, item_name: "Kshot Applications: " + desc, amount: amount.toFixed(2), currency_code: "USD", no_shipping: "1", return: new URL("../", location.href).href });
+  if (inv) p.set("invoice", inv);
+  document.getElementById("paypal").href = "https://www.paypal.com/cgi-bin/webscr?" + p.toString();
+} else {
+  document.getElementById("none").classList.remove("hidden");
+}
+</script>
+</body>
+</html>
