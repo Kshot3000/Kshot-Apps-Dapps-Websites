@@ -33,4 +33,6 @@ python3 -m http.server 8080
 
 Live site: https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/
 
+Email: kcaidevelopment@gmail.com
+
 Follow us on X: [@kshot9000](https://x.com/kshot9000)
