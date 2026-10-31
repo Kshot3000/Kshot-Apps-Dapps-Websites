@@ -30,6 +30,14 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
+## Checks
+
+```bash
+node tests/smoke.mjs
+```
+
+Verifies the Solana demo's base58 encoder, that every relative link resolves in the deployed GitHub Pages layout, and that the token-launch-kit demo config has a valid mint and no dead placeholder links.
+
 ## Contact
 
 Live site: https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/
