@@ -6,6 +6,7 @@ tmp=$(mktemp -d)
 cp -r apps/web/. "$tmp/"
 cp -r apps/solana-demo "$tmp/solana-demo"
 cp -r apps/token-launch-kit "$tmp/token-launch-kit"
+cp -r apps/local-business-template "$tmp/local-business"
 touch "$tmp/.nojekyll"
 cd "$tmp"
 git init -q -b gh-pages

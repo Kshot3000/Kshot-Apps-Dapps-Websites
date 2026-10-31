@@ -9,6 +9,7 @@ We build **apps, dapps, and websites** for businesses, from a landing page to a 
 | `apps/web` | The Kshot Applications company website (storefront and portfolio) |
 | `apps/solana-demo` | Solana dapp demo with Phantom wallet connect |
 | `apps/token-launch-kit` | Config-driven landing page kit for new Solana tokens |
+| `apps/local-business-template` | Config-driven site template for the monthly local business subscription |
 | `scripts/deploy-pages.sh` | Publishes the site and demos to GitHub Pages |
 | `contracts/` | On-chain programs and smart contracts for our dapps |
 | `docs/` | Briefs, service packages, and project notes |
