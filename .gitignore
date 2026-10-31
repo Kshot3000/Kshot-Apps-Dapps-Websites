@@ -6,4 +6,5 @@ dist/
 target/
 
 # Sellable template zips are committed on purpose
-!/products/dist/
+
+/products/
