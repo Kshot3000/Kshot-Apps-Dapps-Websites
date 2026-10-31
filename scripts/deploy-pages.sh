@@ -8,6 +8,9 @@ cp -r apps/solana-demo "$tmp/solana-demo"
 cp -r apps/token-launch-kit "$tmp/token-launch-kit"
 cp -r apps/local-business-template "$tmp/local-business"
 touch "$tmp/.nojekyll"
+# Keep the custom domain (e.g. kshot.tech) across force-pushed deploys.
+cname=$(gh api repos/Kshot3000/Kshot-Apps-Dapps-Websites/pages --jq ".cname // empty" 2>/dev/null || true)
+if [ -n "$cname" ]; then echo "$cname" > "$tmp/CNAME"; fi
 cd "$tmp"
 git init -q -b gh-pages
 git add -A
