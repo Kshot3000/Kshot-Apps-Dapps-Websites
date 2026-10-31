@@ -6,7 +6,7 @@ window.TOKEN = {
   logo: "logo.svg",
   // The token's mint address. This demo uses JUP so the chart and swap show live data.
   mint: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-  demoNote: "Demo site: the chart and swap use the JUP token as sample data.", // set to "" for clients
+  demoNote: "Demo site: sample data only — the contract address, chart, and swap all use the JUP token as an example.", // set to "" for clients
   // Launch Package ($999) features
   features: {
     chart: true, // live DexScreener chart
@@ -19,7 +19,6 @@ window.TOKEN = {
   ],
   socials: [
     { label: "X", url: "https://x.com/kshot9000" },
-    { label: "Telegram", url: "https://t.me/" },
   ],
   tokenomics: [
     { label: "Total supply", value: "1,000,000,000" },

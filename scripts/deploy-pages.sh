@@ -7,6 +7,7 @@ cp -r apps/web/. "$tmp/"
 cp -r apps/solana-demo "$tmp/solana-demo"
 cp -r apps/token-launch-kit "$tmp/token-launch-kit"
 cp -r apps/local-business-template "$tmp/local-business"
+rm -f "$tmp/solana-demo/README.md" "$tmp/token-launch-kit/README.md" "$tmp/local-business/README.md"
 touch "$tmp/.nojekyll"
 # Keep the custom domain (e.g. kshot.tech) across force-pushed deploys.
 cname=$(gh api repos/Kshot3000/Kshot-Apps-Dapps-Websites/pages --jq ".cname // empty" 2>/dev/null || true)

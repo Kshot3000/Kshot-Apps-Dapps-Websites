@@ -13,7 +13,13 @@
   $("tagline").textContent = t.tagline;
   $("mint").textContent = t.mint;
   $("copy").onclick = async () => {
-    await navigator.clipboard.writeText(t.mint);
+    try {
+      await navigator.clipboard.writeText(t.mint);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = t.mint; document.body.append(ta); ta.select();
+      document.execCommand("copy"); ta.remove();
+    }
     $("copy").textContent = "Copied!"; setTimeout(() => ($("copy").textContent = "Copy CA"), 1500);
   };
   t.buyLinks.forEach((l, i) => $("buy").append(link(l, i ? "btn ghost" : "btn")));
