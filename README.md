@@ -40,7 +40,7 @@ Verifies the Solana demo's base58 encoder, that every relative link resolves in 
 
 ## Contact
 
-Live site: https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/
+Live site: https://kshot.tech/
 
 Email: kcaidevelopment@gmail.com
 
