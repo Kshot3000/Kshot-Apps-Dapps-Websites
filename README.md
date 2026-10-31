@@ -37,3 +37,19 @@ Live site: https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/
 Email: kcaidevelopment@gmail.com
 
 Follow us on X: [@kshot9000](https://x.com/kshot9000)
+
+## Design contribution and team handoff
+
+The storefront redesign includes a browser-local project brief builder and responsive interface concepts. It does not send emails or store inquiries; visitors explicitly open an email draft, copy, or download their brief.
+
+- [Design system and reusable patterns](docs/DESIGN-SYSTEM.md)
+- [Grok / Muse integration handoff](docs/CODEX-DESIGN-HANDOFF.md)
+- [Proposed client acquisition plan](docs/CLIENT-ACQUISITION.md)
+
+Preview the complete deployed layout (including demos) and run the storefront checks:
+
+```bash
+node scripts/build-design-preview.mjs
+node --test tests/storefront.test.mjs
+python3 -m http.server 8080 --directory dist
+```
