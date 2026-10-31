@@ -15,7 +15,7 @@ const status = (t) => ($("status").textContent = t || "");
 // Base58 encoder for signatures (no dependencies)
 const B58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 function base58(bytes) {
-  let digits = [0];
+  let digits = [];
   for (const byte of bytes) {
     let carry = byte;
     for (let i = 0; i < digits.length; i++) {
