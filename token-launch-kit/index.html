@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token</title>
+<meta name="description" content="Token launch site kit by Kshot Applications.">
+<link rel="icon" href="logo.svg">
+<link rel="stylesheet" href="style.css?v=2">
+<script src="config.js"></script>
+<script src="https://plugin.jup.ag/plugin-v1.js" data-preload defer></script>
+</head>
+<body>
+<p id="demo" class="demo hidden"></p>
+<header class="hero">
+  <img id="logo" alt="" width="120" height="120">
+  <h1 id="name"></h1>
+  <p class="ticker" id="ticker"></p>
+  <p class="tagline" id="tagline"></p>
+  <div class="ca">
+    <code id="mint"></code>
+    <button id="copy" class="btn small">Copy CA</button>
+  </div>
+  <div class="links" id="buy"></div>
+</header>
+<section id="chartSec" class="hidden"><h2>Live chart</h2><div class="chart"><iframe id="chart" title="Live chart" loading="lazy"></iframe></div></section>
+<section id="swapSec" class="hidden"><h2>Buy now</h2><p class="muted center">Connect Phantom and swap SOL for the token right here.</p><div id="jupiter-plugin" class="swap"></div></section>
+<section><h2>Tokenomics</h2><div class="grid" id="tokenomics"></div></section>
+<section><h2>How to buy</h2><ol id="howto"></ol></section>
+<section><h2>Roadmap</h2><div class="grid" id="roadmap"></div></section>
+<footer>
+  <div class="links" id="socials"></div>
+  <p class="muted small" id="disclaimer"></p>
+  <p class="muted small">Site by <a href="https://kshot3000.github.io/Kshot-Apps-Dapps-Websites/">Kshot Applications</a></p>
+</footer>
+<script src="app.js?v=1"></script>
+</body>
+</html>
