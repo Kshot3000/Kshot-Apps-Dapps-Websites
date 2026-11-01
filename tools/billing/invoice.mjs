@@ -2,8 +2,8 @@
 // Kshot Applications billing helper. No dependencies (Node 18+).
 // Needs STRIPE_SECRET_KEY in the environment. Never commit the key.
 //
-//   node invoice.mjs deposit   --email a@b.com --name "Client" --project "Token Launch Site" --total 499
-//   node invoice.mjs final     --email a@b.com --name "Client" --project "Token Launch Site" --total 499
+//   node invoice.mjs deposit   --email a@b.com --name "Client" --project "Token Launch Site" --total 299
+//   node invoice.mjs final     --email a@b.com --name "Client" --project "Token Launch Site" --total 299
 //   node invoice.mjs subscribe --email a@b.com --name "Client" --plan site_subscription|care_plan
 //
 // deposit/final bill 50% of --total (USD) on a Stripe-hosted invoice page and email it.

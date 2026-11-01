@@ -7,7 +7,7 @@ window.TOKEN = {
   // The token's mint address. This demo uses JUP so the chart and swap show live data.
   mint: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
   demoNote: "Demo site: sample data only — the contract address, chart, and swap all use the JUP token as an example.", // set to "" for clients
-  // Launch Package ($999) features
+  // Launch Package ($699) features
   features: {
     chart: true, // live DexScreener chart
     swap: true,  // Phantom wallet connect + buy on-site via Jupiter

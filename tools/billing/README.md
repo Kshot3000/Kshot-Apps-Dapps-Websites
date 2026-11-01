@@ -9,8 +9,8 @@ Products in Stripe are tagged with `metadata.key`: `site_subscription`, `care_pl
 
 ```
 export STRIPE_SECRET_KEY=sk_test_...   # never commit this
-node tools/billing/invoice.mjs deposit   --email client@x.com --name "Client" --project "Token Launch Site" --total 499
-node tools/billing/invoice.mjs final     --email client@x.com --name "Client" --project "Token Launch Site" --total 499
+node tools/billing/invoice.mjs deposit   --email client@x.com --name "Client" --project "Token Launch Site" --total 299
+node tools/billing/invoice.mjs final     --email client@x.com --name "Client" --project "Token Launch Site" --total 299
 node tools/billing/invoice.mjs subscribe --email client@x.com --name "Client" --plan site_subscription
 ```
 
