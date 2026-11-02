@@ -1673,3 +1673,37 @@ select {
 .diy-links a span:not([aria-hidden]) { opacity:.7; font-weight:500; }
 .diy-links a:hover { border-color:currentColor; }
 @media(max-width:620px) { .diy-row { flex-direction:column; align-items:stretch; } .diy-links a { justify-content:space-between; } }
+.app-card .app-icon {
+  border-radius:14px;
+  margin-bottom:18px
+}
+.app-card .button {
+  margin-top:auto
+}
+.app-card [hidden] {
+  display:none
+}
+.dev-row {
+  margin-top:28px;
+  padding:20px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+.dev-row ul {
+  list-style:none;
+  margin:8px 0 0;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px
+}
+.dev-row li {
+  border:1px solid #353d47;
+  border-radius:30px;
+  font-size:13px;
+  padding:6px 14px;
+  color:#b7c1ca
+}
+.dev-row li span {
+  color:var(--muted)
+}
