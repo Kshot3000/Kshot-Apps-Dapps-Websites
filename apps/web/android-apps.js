@@ -1,7 +1,7 @@
 // Android app links. Fill in URLs when ready; empty values keep fallbacks (tester -> #contact, Play button hidden).
 const ANDROID_APP_LINKS = {
   testerOptIn: "", // e.g. Google Group / Play closed-test opt-in URL
-  play: { pickleball: "", cornhole: "", spades: "" }
+  play: { pickleball: "", cornhole: "", spades: "", dicescore: "", euchre: "", bocce: "" }
 };
 document.querySelectorAll("[data-tester-link]").forEach((a) => {
   if (ANDROID_APP_LINKS.testerOptIn) { a.href = ANDROID_APP_LINKS.testerOptIn; a.target = "_blank"; a.rel = "noopener noreferrer"; }
