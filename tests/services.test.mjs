@@ -136,6 +136,14 @@ test('payment step and quote text include the 24-hour confirmed-rate hold', () =
   const line = "We reply with the exact coin amount at that day's rate. Pay after we confirm, and the amount holds for 24 hours.";
   assert.ok(html.includes(line), 'page is missing the 24-hour hold line');
   assert.ok(appJs.includes(line), 'generated quote text is missing the 24-hour hold line');
+  const step = html.slice(html.indexOf('Pay, then we deliver.'), html.indexOf('The work is AI-generated, made with tools including Grok, and reviewed before delivery.'));
+  const dmQuote = step.indexOf('DM your quote, including your reference code');
+  const rate = step.indexOf(line);
+  const afterPay = step.indexOf('After you pay, DM the transaction ID together with your reference code');
+  assert.ok(dmQuote !== -1 && rate !== -1 && afterPay !== -1, 'step 04 is missing the DM / rate / pay-then-DM sequence');
+  assert.ok(dmQuote < rate && rate < afterPay, 'step 04 is not in the DM-quote, rate, then tx-ID order');
+  const quote = appJs.slice(appJs.indexOf('DM this quote, including this reference code'), appJs.indexOf('After you pay, DM the transaction ID together with this reference code'));
+  assert.ok(quote.includes(line), 'generated quote text does not put the rate line after the initial DM instruction');
 });
 
 test('refund, file-deletion, and Rev comparison wording match the review fixes', () => {
@@ -143,6 +151,8 @@ test('refund, file-deletion, and Rev comparison wording match the review fixes',
   assert.doesNotMatch(html, /refund you in the same coin, minus the network fee/);
   assert.match(html, /We delete our copies 30 days after delivery \(or sooner on request\)/);
   assert.doesNotMatch(html, /Files are deleted 30 days after delivery/);
-  assert.equal((html.match(/Jobs under \$100 are paid upfront/g) || []).length, 1);
+  assert.match(html, /Jobs and packages under \$100 are paid upfront/);
+  assert.equal((html.match(/paid upfront/g) || []).length, 1);
+  assert.doesNotMatch(html, /All three packages are under \$100, so they are paid upfront/);
 });
 

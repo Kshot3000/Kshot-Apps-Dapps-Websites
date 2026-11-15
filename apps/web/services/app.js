@@ -251,13 +251,13 @@
       '',
       'The work is AI-generated, made with tools including Grok, and reviewed before delivery.',
       'This is a quote request for finished work, not access to an AI tool.',
-      "We reply with the exact coin amount at that day's rate. Pay after we confirm, and the amount holds for 24 hours.",
       'Kshot Applications is independent and not affiliated with xAI.',
-      'Jobs under $100 are paid upfront. Bigger jobs are half upfront and half on delivery.',
-      'When you pay, put this reference code in the payment memo where the coin supports one, and DM the transaction ID together with this code to @kshot9000.',
+      'DM this quote, including this reference code, to @kshot9000.',
+      "We reply with the exact coin amount at that day's rate. Pay after we confirm, and the amount holds for 24 hours.",
+      'After you pay, DM the transaction ID together with this reference code to @kshot9000. Put the reference code in the payment memo where the coin supports one.',
+      'Jobs and packages under $100 are paid upfront. Bigger jobs are half upfront and half on delivery.',
       'You may not use the output to train AI models.',
       '',
-      'To send this: copy it and DM @kshot9000 on X.',
       'Nothing on this page is sent or stored automatically.'
     ].filter((line, i, arr) => line !== '' || (arr[i - 1] !== '')).join('\n');
 
