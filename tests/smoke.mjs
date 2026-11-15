@@ -60,7 +60,7 @@ try {
   rmSync(join(tmp, "solana-demo/README.md"), { force: true });
   rmSync(join(tmp, "token-launch-kit/README.md"), { force: true });
   rmSync(join(tmp, "local-business/README.md"), { force: true });
-  const pages = ["index.html", "solana-demo/index.html", "token-launch-kit/index.html", "local-business/index.html", "pay-crypto/index.html"];
+  const pages = ["index.html", "solana-demo/index.html", "token-launch-kit/index.html", "local-business/index.html", "pay-crypto/index.html", "services/index.html"];
   let bad = [];
   for (const page of pages) {
     const html = readFileSync(join(tmp, page), "utf8");

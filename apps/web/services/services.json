@@ -1,0 +1,104 @@
+{
+  "pricingNote": "Priced below similar services. Final rates come from this price list.",
+  "payments": {
+    "ADA": "addr1q8hnl6vl5a6k3rw3n5g3jtte696zcl76kfatzv7gpswa9r0dj7fma6klq55y4ffm7tf0em09udnyhuk4ah92pl5x9jpqjae44v",
+    "BTC": "3GnR7TWBXAB3pPztBWpNF4LMNEX5yX8vZK",
+    "SOL": "FEqXqiJt2eQ9tRhukHgYxQMiN7xkTrR8PHrR4sh7u1zG"
+  },
+  "jobs": [
+    {
+      "id": "product-copy-1",
+      "name": "Product copy (single listing)",
+      "shortName": "Product copy",
+      "summary": "One listing: a title, five bullets, and a 150–200 word description, in your voice.",
+      "price": 15,
+      "currency": "USD",
+      "priceLabel": "$15 for one listing",
+      "turnaround": "48 hours",
+      "orderable": true
+    },
+    {
+      "id": "product-copy-5",
+      "name": "Product copy pack (5 listings)",
+      "shortName": "Product copy",
+      "summary": "Five listings: a title, five bullets, and a 150–200 word description for each, in your voice.",
+      "price": 29,
+      "currency": "USD",
+      "priceLabel": "$29 for 5 listings",
+      "turnaround": "48 hours",
+      "orderable": true
+    },
+    {
+      "id": "transcript-60",
+      "name": "Transcript (up to 60 minutes)",
+      "shortName": "Transcript",
+      "summary": "Up to 60 minutes of audio or video, with an AI transcript, speaker labels, and light cleanup, delivered as text. Not a legal or medical certified transcript.",
+      "price": 12,
+      "currency": "USD",
+      "priceLabel": "$12",
+      "turnaround": "48 hours",
+      "orderable": true
+    },
+    {
+      "id": "research-brief",
+      "name": "Cited research brief (2–4 pages)",
+      "shortName": "Cited research brief",
+      "summary": "A 2–4 page cited brief on a competitor, market, product, or Cardano or Midnight topic, with a source list and working links.",
+      "price": 45,
+      "currency": "USD",
+      "priceLabel": "$45",
+      "turnaround": "72 hours",
+      "orderable": true
+    },
+    {
+      "id": "spreadsheet-cleanup",
+      "name": "Spreadsheet cleanup (up to 500 rows)",
+      "shortName": "Spreadsheet cleanup",
+      "summary": "Cleanup and tagging for a spreadsheet of up to 500 rows, with the rules agreed in your quote (for example, dedupe, normalize, or categorize).",
+      "price": 15,
+      "currency": "USD",
+      "priceLabel": "$15",
+      "turnaround": "48 hours",
+      "orderable": true
+    }
+  ],
+  "packages": {
+    "label": "Starter packages",
+    "status": "available",
+    "items": [
+      {
+        "id": "try_it",
+        "name": "Try-It",
+        "priceLabel": "$12–$15",
+        "price_usd_from": 12,
+        "price_usd_to": 15,
+        "pick_one_of": ["product-copy-1", "transcript-60", "spreadsheet-cleanup"],
+        "turnaround": "48 hours",
+        "summary": "One small job, so you can see the quality before ordering more. Pick one product listing ($15), one 60-minute transcript ($12), or a 500-row spreadsheet cleanup ($15).",
+        "orderable": true
+      },
+      {
+        "id": "shop_starter",
+        "name": "Shop Starter",
+        "price": 39,
+        "list_usd": 44,
+        "priceLabel": "$39",
+        "includes": ["product-copy-5", "spreadsheet-cleanup"],
+        "turnaround": "48 hours",
+        "summary": "A 5-listing product copy pack plus a 500-row spreadsheet cleanup. Bought separately that’s $44.",
+        "orderable": true
+      },
+      {
+        "id": "cardano_project",
+        "name": "Cardano Project",
+        "price": 64,
+        "list_usd": 72,
+        "priceLabel": "$64",
+        "includes": ["research-brief", "transcript-60", "spreadsheet-cleanup"],
+        "turnaround": "72 hours",
+        "summary": "A 2–4 page cited research brief, a transcript of up to 60 minutes, and a 500-row spreadsheet cleanup. Bought separately that’s $72. Never security or audit work, investment advice, or training data.",
+        "orderable": true
+      }
+    ]
+  }
+}
