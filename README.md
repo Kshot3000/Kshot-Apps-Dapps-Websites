@@ -43,13 +43,13 @@ Verifies the Solana demo's base58 encoder, that every relative link resolves in 
 
 Live site: https://kshot.tech/
 
-Email: kcaidevelopment@gmail.com
+DM @kshot9000 on X
 
 Follow us on X: [@kshot9000](https://x.com/kshot9000)
 
 ## Design contribution and team handoff
 
-The storefront redesign includes a browser-local project brief builder and responsive interface concepts. It does not send emails or store inquiries; visitors explicitly open an email draft, copy, or download their brief.
+The storefront redesign includes a browser-local project brief builder and responsive interface concepts. It does not send messages or store inquiries; visitors copy their brief and DM @kshot9000 on X.
 
 - [Design system and reusable patterns](docs/DESIGN-SYSTEM.md)
 - [Grok / Muse integration handoff](docs/CODEX-DESIGN-HANDOFF.md)
