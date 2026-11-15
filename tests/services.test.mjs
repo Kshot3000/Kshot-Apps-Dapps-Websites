@@ -104,9 +104,11 @@ test('page shows only the four approved launch jobs and Joe’s three packages',
 
 test('comparison table uses Linda’s checked Nov 15 figures', () => {
   assert.match(html, /Median starting price \$40 \(\$45\.70 after buyer fees\)/);
+  assert.match(html, /Rev AI transcription \(retail\)/);
   assert.match(html, /\$0\.25\/min, which is \$15/);
   assert.match(html, /About \$60 \(3 hours at about \$20\/hr\)/);
-  assert.match(html, /Median \$20/);
+  assert.match(html, /Fiverr data entry/);
+  assert.match(html, /Median starting price \$20/);
   assert.match(html, /Competitor prices were checked Nov 15, 2026, and may change/);
   assert.match(html, /Spreadsheet cleanup, up to 500 rows/);
 });
@@ -128,3 +130,19 @@ test('disclosure, privacy, and no-access wording match the final copy', () => {
   assert.match(appJs, /KS-/);
   assert.doesNotMatch(appJs, /\b(?:XMLHttpRequest|localStorage|sessionStorage)\b/);
 });
+
+
+test('payment step and quote text include the 24-hour confirmed-rate hold', () => {
+  const line = "We reply with the exact coin amount at that day's rate. Pay after we confirm, and the amount holds for 24 hours.";
+  assert.ok(html.includes(line), 'page is missing the 24-hour hold line');
+  assert.ok(appJs.includes(line), 'generated quote text is missing the 24-hour hold line');
+});
+
+test('refund, file-deletion, and Rev comparison wording match the review fixes', () => {
+  assert.match(html, /we refund the same amount of the same coin the client paid, minus the network fee/);
+  assert.doesNotMatch(html, /refund you in the same coin, minus the network fee/);
+  assert.match(html, /We delete our copies 30 days after delivery \(or sooner on request\)/);
+  assert.doesNotMatch(html, /Files are deleted 30 days after delivery/);
+  assert.equal((html.match(/Jobs under \$100 are paid upfront/g) || []).length, 1);
+});
+
