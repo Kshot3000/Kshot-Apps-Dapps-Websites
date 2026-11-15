@@ -54,17 +54,19 @@
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const field = key => String(data.get(key) || '').trim();
+    const handle = field('contact');
     currentBrief = [
       'PROJECT BRIEF — KSHOT APPLICATIONS', '',
-      'Name: ' + field('name'), 'Email: ' + field('email'),
+      'Name: ' + field('name'),
+      ...(handle ? ['X or Telegram: ' + handle] : []),
       'Project: ' + field('type'), 'Budget: ' + field('budget'),
       'Timing: ' + field('timing'), '', 'The idea:', field('idea'), '',
-      'Please help me confirm the scope, cost, and delivery plan.'
+      'Please help me confirm the scope, cost, and delivery plan.',
+      'DM this brief to @kshot9000 on X. Nothing is sent automatically.'
     ].join('\n');
     $('brief-output').value = currentBrief;
-    $('email-brief').href = 'mailto:kcaidevelopment@gmail.com?subject=' + encodeURIComponent('Project inquiry: ' + field('type')) + '&body=' + encodeURIComponent(currentBrief);
     $('brief-result').hidden = false;
-    $('brief-status').textContent = 'Brief ready. Open an email draft, copy it, or download it. Nothing has been sent.';
+    $('brief-status').textContent = 'Brief ready. Copy it, then DM @kshot9000 on X. Nothing has been sent.';
     $('brief-output').focus();
   });
   $('copy-brief').addEventListener('click', async () => {
@@ -72,7 +74,7 @@
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(currentBrief);
-      $('brief-status').textContent = 'Brief copied. Paste it into your email to kcaidevelopment@gmail.com.';
+      $('brief-status').textContent = 'Brief copied. Paste it into a DM to @kshot9000 on X.';
     } catch {
       $('brief-output').focus();
       $('brief-output').select();
@@ -89,6 +91,6 @@
     link.click();
     link.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    $('brief-status').textContent = 'Brief prepared for download. Email the file to kcaidevelopment@gmail.com when ready.';
+    $('brief-status').textContent = 'Brief prepared for download. Paste it into a DM to @kshot9000 on X when ready.';
   });
 })();

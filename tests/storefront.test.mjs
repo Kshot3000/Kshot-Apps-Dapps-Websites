@@ -31,6 +31,14 @@ test('storefront controller parses and preserves explicit no-submission contact 
   assert.match(source, /Nothing is submitted or stored by this site/);
   assert.match(source, /role="status" aria-live="polite"/);
   assert.match(source, /<noscript>/);
+  assert.doesNotMatch(source, /type="email"/i);
+  assert.doesNotMatch(source, /<input[^>]*name="email"/i);
+  assert.match(source, /Cards coming later/);
+  assert.match(source, /Pay in ADA, BTC, or SOL/);
+  assert.match(source, /Copy brief/);
+  assert.match(source, /Message us on X/);
+  assert.match(source, /https:\/\/x\.com\/kshot9000/);
+  assert.match(js, /DM this brief to @kshot9000 on X/);
 });
 
 test('homepage keeps one primary heading and absolute social metadata', () => {
