@@ -8,6 +8,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const webRoot = path.join(root, 'apps/web');
 const skipExt = new Set([
   '.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico',
+  '.mp4', '.webm', '.mov',
   '.woff', '.woff2', '.ttf', '.otf', '.eot', '.pdf', '.zip',
   '.map',
 ]);
