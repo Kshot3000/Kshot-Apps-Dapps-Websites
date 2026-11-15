@@ -50,7 +50,7 @@
   }
 
   function renderItem(item) {
-    const title = escapeHtml(item.title || 'Muse on X');
+    const title = escapeHtml(item.title || 'Kshot on X');
     const url = escapeHtml(item.url || '');
     const when = formatDate(item.createdAt);
     const time = when
@@ -95,12 +95,12 @@
         <p class="embed-meta"><a class="text-link" href="${url}" target="_blank" rel="noopener noreferrer">Open on X <span aria-hidden="true">↗</span></a></p>
       </article>`;
     }).join('');
-    if (!document.querySelector('script[data-muse-twitter]')) {
+    if (!document.querySelector('script[data-agent-twitter]')) {
       const script = document.createElement('script');
       script.src = 'https://platform.twitter.com/widgets.js';
       script.async = true;
       script.charset = 'utf-8';
-      script.dataset.museTwitter = 'true';
+      script.dataset.agentTwitter = 'true';
       document.body.appendChild(script);
     }
   }
@@ -110,8 +110,8 @@
     const status = $('gallery-status');
     if (!grid) return;
     try {
-      const res = await fetch('muse.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error('Could not load muse.json');
+      const res = await fetch('agent.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('Could not load agent.json');
       const data = await res.json();
       const items = Array.isArray(data.items) ? data.items : [];
       if (!items.length) throw new Error('No gallery items');

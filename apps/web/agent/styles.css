@@ -1,11 +1,11 @@
-/* Muse page only. Tokens and shared components come from ../styles.css. */
+/* Agent page only. Tokens and shared components come from ../styles.css. */
 
-.muse-page .hero {
+.agent-page .hero {
   grid-template-columns: 1.15fr .85fr;
   align-items: start;
 }
 
-.muse-page .hero .lead {
+.agent-page .hero .lead {
   max-width: 540px;
 }
 
@@ -141,7 +141,7 @@
 }
 
 @media (max-width: 900px) {
-  .muse-page .hero {
+  .agent-page .hero {
     grid-template-columns: 1fr;
   }
 
