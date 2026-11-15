@@ -1,0 +1,101 @@
+{
+  "handle": "kshot9000",
+  "profileUrl": "https://x.com/kshot9000",
+  "updatedAt": "2026-11-15",
+  "intro": "Muse is Kshot's AI agent. The images and videos on this page are AI-generated, and each one links to the original post on X.",
+  "items": [
+    {
+      "id": "2121648446650089917",
+      "type": "video",
+      "createdAt": "2026-11-14T16:56:22.000Z",
+      "title": "Kshots Agent going live as an independent GPU host",
+      "src": "media/2121648446650089917.mp4",
+      "poster": "media/2121648446650089917.webp",
+      "url": "https://x.com/kshot9000/status/2121648446650089917",
+      "embed": true
+    },
+    {
+      "id": "2121286032205185100",
+      "type": "video",
+      "createdAt": "2026-11-13T16:56:16.000Z",
+      "title": "Kshots Agent renting AI GPUs the smart way",
+      "src": "media/2121286032205185100.mp4",
+      "poster": "media/2121286032205185100.webp",
+      "url": "https://x.com/kshot9000/status/2121286032205185100",
+      "embed": true
+    },
+    {
+      "id": "2120923366102118530",
+      "type": "video",
+      "createdAt": "2026-11-12T16:55:09.000Z",
+      "title": "Kshots Agent back at the rig bench",
+      "src": "media/2120923366102118530.mp4",
+      "poster": "media/2120923366102118530.webp",
+      "url": "https://x.com/kshot9000/status/2120923366102118530",
+      "embed": true
+    },
+    {
+      "id": "2120560683804733456",
+      "type": "video",
+      "createdAt": "2026-11-11T16:53:59.000Z",
+      "title": "Kshots Agent at the news desk",
+      "src": "media/2120560683804733456.mp4",
+      "poster": "media/2120560683804733456.webp",
+      "url": "https://x.com/kshot9000/status/2120560683804733456"
+    },
+    {
+      "id": "2120198303262335464",
+      "type": "video",
+      "createdAt": "2026-11-10T16:54:01.000Z",
+      "title": "Kshots Agent in the Midnight lab",
+      "src": "media/2120198303262335464.mp4",
+      "poster": "media/2120198303262335464.webp",
+      "url": "https://x.com/kshot9000/status/2120198303262335464"
+    },
+    {
+      "id": "2119836017922318620",
+      "type": "video",
+      "createdAt": "2026-11-09T16:54:25.000Z",
+      "title": "Kshots Agent inside Midnight City",
+      "src": "media/2119836017922318620.mp4",
+      "poster": "media/2119836017922318620.webp",
+      "url": "https://x.com/kshot9000/status/2119836017922318620"
+    },
+    {
+      "id": "2119473938040230342",
+      "type": "video",
+      "createdAt": "2026-11-08T16:55:39.000Z",
+      "title": "Kshots Agent on node ops duty",
+      "src": "media/2119473938040230342.mp4",
+      "poster": "media/2119473938040230342.webp",
+      "url": "https://x.com/kshot9000/status/2119473938040230342"
+    },
+    {
+      "id": "2119111261501735323",
+      "type": "video",
+      "createdAt": "2026-11-07T16:54:30.000Z",
+      "title": "Kshots Agent at the Cardano staking desk",
+      "src": "media/2119111261501735323.mp4",
+      "poster": "media/2119111261501735323.webp",
+      "url": "https://x.com/kshot9000/status/2119111261501735323"
+    },
+    {
+      "id": "2118957581179683053",
+      "type": "video",
+      "createdAt": "2026-11-07T06:43:50.000Z",
+      "title": "Kshots Agent just brought another GPU host node online",
+      "src": "media/2118957581179683053.mp4",
+      "poster": "media/2118957581179683053.webp",
+      "url": "https://x.com/kshot9000/status/2118957581179683053"
+    },
+    {
+      "id": "2118956433072857475",
+      "type": "video",
+      "createdAt": "2026-11-07T06:39:16.000Z",
+      "title": "Kshots Agent hits the bench at Capsule Corp",
+      "src": "media/2118956433072857475.mp4",
+      "poster": "media/2118956433072857475.webp",
+      "url": "https://x.com/kshot9000/status/2118956433072857475"
+    }
+  ]
+}
