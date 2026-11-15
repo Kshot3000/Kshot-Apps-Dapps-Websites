@@ -34,6 +34,7 @@ python3 -m http.server 8080
 
 ```bash
 node tests/smoke.mjs
+node --test tests/storefront.test.mjs tests/services.test.mjs
 ```
 
 Verifies the Solana demo's base58 encoder, that every relative link resolves in the deployed GitHub Pages layout, and that the token-launch-kit demo config has a valid mint and no dead placeholder links.
