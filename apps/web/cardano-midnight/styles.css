@@ -1,0 +1,219 @@
+/* Cardano & Midnight page only. Tokens and shared components come from ../styles.css. */
+
+.cardano-midnight-page .hero {
+  grid-template-columns: 1.1fr .9fr;
+  align-items: start;
+}
+
+.cardano-midnight-page .hero .lead {
+  max-width: 520px;
+}
+
+.how-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 28px 22px;
+}
+
+.how-panel > p.eyebrow {
+  color: var(--mint);
+  margin-bottom: 16px;
+}
+
+.how-panel ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.how-panel li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.how-panel .step-num {
+  font: 600 11px/1 "Courier New", monospace;
+  letter-spacing: .1em;
+  color: var(--ink);
+  background: var(--mint);
+  width: 42px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-top: 2px;
+}
+
+.how-panel h2,
+.how-panel h3 {
+  font-size: 18px;
+  letter-spacing: -.03em;
+  margin-bottom: 6px;
+}
+
+.how-panel p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.desk-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.desk-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 100%;
+}
+
+.desk-card .service-number {
+  font: 600 11px/1 "Courier New", monospace;
+  letter-spacing: .12em;
+  color: var(--lilac);
+}
+
+.desk-card h3 {
+  font-size: 22px;
+}
+
+.desk-card p {
+  color: var(--muted);
+  font-size: 15px;
+  flex: 1;
+}
+
+.price-placeholder {
+  margin-top: auto;
+  font: 600 12px/1.4 "Courier New", monospace;
+  letter-spacing: .04em;
+  color: var(--mint);
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.record-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.record-num {
+  font-size: 44px;
+  font-weight: 550;
+  letter-spacing: -.04em;
+  line-height: 1;
+  color: var(--mint);
+}
+
+.record-card h3 {
+  font-size: 19px;
+}
+
+.record-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.pay-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.pay-grid-single {
+  grid-template-columns: minmax(0, 560px);
+}
+
+.pay-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pay-card h3 {
+  font-size: 20px;
+}
+
+.pay-card code {
+  display: block;
+  word-break: break-all;
+  background: #0b0b14;
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pay-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.current-page {
+  color: var(--mint);
+}
+
+.footer-inner {
+  flex-wrap: wrap;
+  row-gap: 12px;
+}
+
+.footer-inner span {
+  max-width: 420px;
+}
+
+@media (max-width: 1100px) {
+  .pay-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .cardano-midnight-page .hero,
+  .desk-grid,
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardano-midnight-page .hero h1 {
+    font-size: clamp(42px, 10vw, 72px);
+  }
+}
+
+@media (max-width: 620px) {
+  .how-panel,
+  .desk-card,
+  .record-card,
+  .pay-card {
+    padding: 20px;
+  }
+}
