@@ -1666,6 +1666,12 @@ select {
 @media(max-width:850px) { .barber-mark { right: 5%; font-size: 66px; opacity: .5; } .local-visual { position: relative; z-index: 1; } }
 @media(max-width:620px) { .local-art { height: 300px; } .local-visual { padding: 30px 28px; } .local-visual strong { font-size: 36px; } .barber-mark { top: 120px; right: -15px; font-size: 60px; opacity: .22; } }
 
+.athena-art { background: #232038; color: #e9d8a6; height: 280px; }
+.athena-visual { position: absolute; inset: 30px 34px; }
+.athena-visual strong { display: block; font-size: 40px; font-weight: 500; line-height: 1.05; letter-spacing: -.055em; margin: 23px 0; }
+.athena-symbol { font-size: 34px; line-height: 1; }
+@media(max-width:620px) { .athena-art { height: 300px; } .athena-visual { inset: 26px 28px; } .athena-visual strong { font-size: 36px; } }
+
 .diy-row { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 24px; margin-top:20px; padding:16px 20px; border:1px solid currentColor; border-color:rgba(127,127,127,.3); border-radius:16px; }
 .diy-row .eyebrow { margin:0; }
 .diy-links { display:flex; flex-wrap:wrap; gap:10px; }
